@@ -34,6 +34,8 @@ const legalLinks = [
   { id: 3, title: "Cookie Policy" },
 ];
 
+const currentDate = new Date();
+
 const Footer = ({ footerProductLinks, footerSupportLinks }) => {
   {console.log("product links", footerProductLinks);}
   return (
@@ -80,7 +82,7 @@ const Footer = ({ footerProductLinks, footerSupportLinks }) => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 Conception UI. All rights reserved.</p>
+          <p>&copy; {currentDate.getFullYear()} Conception UI. All rights reserved.</p>
           <div className="legal-links">
             {legalLinks.map((link) => (
               <a href="#" key={link.id}>
