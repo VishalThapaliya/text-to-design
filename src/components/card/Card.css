@@ -1,4 +1,4 @@
-.card {
+.feature-card {
     background-color: var(--bg-white);
     padding: 2rem;
     border-radius: 0.75rem;
@@ -8,12 +8,12 @@
     cursor: pointer;
 }
 
-.card:hover {
+.feature-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.card-icon-wrapper {
+.feature-icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,20 +23,20 @@
     margin-bottom: 1.5rem;
 }
 
-.card .icon {
+.feature-card .icon {
     width: 2rem;
     height: 2rem;
     color: var(--text-light);
 }
 
-.card h3 {
+.feature-card h3 {
     font-size: 1.25rem;
     color: var(--text-dark);
     font-weight: 600;
     margin: 0 0 0.5rem;
 }
 
-.card p {
+.feature-card p {
     color: var(--text-muted);
     font-size: 0.9rem;
     line-height: 1.6;
