@@ -31,7 +31,7 @@ const Hero = () => {
                     <span>Avegrage Visualized</span>
                 </div>
                 <div>
-                    <p>&lt; 30s</p>
+                    <p>&lt;30s</p>
                     <span>Avegrage Generation</span>
                 </div>
                 <div>
