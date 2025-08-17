@@ -7,6 +7,7 @@ import Generator from './components/generator/Generator';
 import { IoFastFoodOutline } from "react-icons/io5";
 import { IoIosFitness } from "react-icons/io";
 import { MdOutlinePalette } from "react-icons/md";
+import Features from './components/features/Features';
 
 // --- Generator data ---
 const inspirations = [
@@ -37,6 +38,7 @@ const App = () => {
       <main>
         <Hero />
         <Generator inspirations={inspirations}/>
+        <Features />
       </main>
     </div>
   )
