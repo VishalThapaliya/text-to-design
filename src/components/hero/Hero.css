@@ -8,13 +8,6 @@
     background: linear-gradient(to bottom, rgba(79, 70, 229, 0.7), rgba(124, 58, 237, 0.9)), url(../../assets/hero-background.jpeg);
 }
 
-/* .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
-    z-index: 1;
-} */
-
 .hero-content {
     position: relative;
     z-index: 2;
@@ -44,6 +37,7 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 4rem;
+    animation: fadeInUp 1s ease-out;
 }
 
 .btn-primary {
@@ -71,4 +65,34 @@
 
 .hero-stats span {
     color: var(--bg-light);
+}
+
+/* animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
