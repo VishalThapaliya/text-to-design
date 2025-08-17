@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Generator from './components/generator/Generator';
+import Footer from './components/footer/Footer';
 
 // import react icons
 import { IoFastFoodOutline } from "react-icons/io5";
@@ -31,6 +32,46 @@ const inspirations = [
   },
 ]
 
+// --- Footer data ---
+const footerProductLinks = [
+    {
+        id: 1,
+        title: "Features"
+    },
+    {
+        id: 2,
+        title: "Pricing"
+    },
+    {
+        id: 3,
+        title: "Examples"
+    },
+    {
+        id: 4,
+        title: "API"
+    }
+]
+
+const footerSupportLinks = [
+  {
+    id: 1,
+    title: 'Documentation'
+  },
+  {
+    id: 2,
+    title: 'Help Center'
+  },
+  {
+    id: 3,
+    title: 'Contact'
+  },
+  {
+    id: 4,
+    title: 'Status'
+  },
+]
+
+
 const App = () => {
   return (
     <div className='app-wrapper'>
@@ -40,6 +81,7 @@ const App = () => {
         <Generator inspirations={inspirations}/>
         <Features />
       </main>
+      <Footer footerProductLinks={footerProductLinks} footerSupportLinks={footerSupportLinks}/>
     </div>
   )
 }
