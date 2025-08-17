@@ -1,6 +1,8 @@
-import React from 'react'
-import './Hero.css'
-import HeroBackgroundImage from '../../assets/hero-background.jpg'
+import HeroBackgroundImage from '../../assets/hero-background.jpg';
+import { FaArrowRight } from "react-icons/fa";
+import { IoFlashOutline } from "react-icons/io5";
+import './Hero.css';
+
 
 const Hero = () => {
   return (
@@ -14,8 +16,14 @@ const Hero = () => {
                 Describe your app concept in plain language and watch as AI transforms your words into beautiful, interactive mockups in seconds.
             </p>
             <div className="hero-buttons">
-                <button className="btn btn-primary">Start Creating &rarr;</button>
-                <button className="btn btn-secondary">See Examples</button>
+                <button className="btn btn-primary">
+                    Start Creating 
+                    <FaArrowRight />
+                </button>
+                <button className="btn btn-secondary">
+                    <IoFlashOutline />
+                    See Examples
+                </button>
             </div>
             <div className="hero-stats">
                 <div>

@@ -28,6 +28,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -61,6 +65,10 @@ body {
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
     padding: 0.75rem 2rem; 
     border: none;
     border-radius: 0.5rem;
@@ -81,4 +89,10 @@ body {
     border-radius: 0.75rem;
     border: 1px solid var(--border-color);
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.icon { 
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--icon-bg-blue);
 }

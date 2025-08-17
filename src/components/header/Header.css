@@ -15,7 +15,13 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logo-area a {
+    color: var(--text-light);
 }
 
 .main-nav {
